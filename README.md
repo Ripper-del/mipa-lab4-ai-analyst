@@ -15,4 +15,6 @@ python -m analyst --no-llm hypotheses demo/events_flat.csv --date-col event_date
 ```
 Прапорець `--no-llm` вимикає модель (працюють `eda`, `hypotheses`, `drop`). Провайдер обирається за наявним ключем або `--provider`.
 
+**Промпти.** Описані в `prompts.md`, самі тексти в `analyst/prompts.py`.
+
 **Структура.** `analyst/`: код (`llm.py` клієнти, `eda.py`, `hypotheses.py`, `nl2pandas.py`, `explain_drop.py`, `summary.py`, `verify.py`). `tests/`: тести (`python -m unittest discover tests`). `demo/`: дані, прогони й скриншоти.
